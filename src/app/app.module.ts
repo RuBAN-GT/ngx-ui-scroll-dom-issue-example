@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { UiScrollModule } from 'ngx-ui-scroll';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { DatatableComponent } from './datatable/datatable.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatatableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    UiScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

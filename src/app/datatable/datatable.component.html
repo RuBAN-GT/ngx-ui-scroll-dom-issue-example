@@ -1,0 +1,13 @@
+<h1>Datatable demo</h1>
+
+<div class="toolbar">
+  <input type="text" [formControl]="search" placeholder="Search phrase" />
+  <button (click)="generateMockStore()">Regenerate collection</button>
+  <button (click)="makeMutation()">Make mutation</button>
+</div>
+
+<div #viewport class="viewport">
+  <div class="viewport__item" *uiScroll="let item of datasource">
+    <div class="viewport__content">[{{item.id}}] - {{item.name}}</div>
+  </div>
+</div>

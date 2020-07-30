@@ -1,0 +1,20 @@
+.toolbar {
+  margin-bottom: 1.5em;
+}
+
+.viewport {
+  width: 600px;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+
+  &__item {
+    padding: 0 0 1em 0;
+  }
+
+  &__content {
+    padding: 1em;
+    background-color: #ccc;
+  }
+}
